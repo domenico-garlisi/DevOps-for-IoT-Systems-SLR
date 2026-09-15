@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite both the manuscript and this repository/dataset."
+title: "Replication Package: DevOps for IoT Systems — Methodologies and Software Tools (Systematic Literature Review)"
+type: dataset
+authors:
+  - family-names: Ciancarini
+    given-names: Paolo
+    affiliation: "University of Bologna"
+  - family-names: Garlisi
+    given-names: Domenico
+    affiliation: "University of Palermo; Istituto Nazionale di Alta Matematica \"Francesco Severi\"; CNIT"
+    email: domenico.garlisi@unipa.it
+    orcid: "TODO: add ORCID"
+  - family-names: Giancarlo
+    given-names: Raffaele
+    affiliation: "University of Palermo"
+  - family-names: Grimaudo
+    given-names: Gennaro
+    affiliation: "University of Palermo"
+license: CC-BY-4.0
+repository-code: "https://github.com/domenico-garlisi/DevOps-for-IoT-Systems-Methodologies-and-Software-Tools"
+url: "https://www.zotero.org/groups/6502633/devops-iot-library"
+keywords:
+  - DevOps
+  - Internet of Things
+  - "Cloud-Edge Computing Continuum"
+  - CI/CD
+  - DevSecOps
+  - "systematic literature review"
+  - "replication package"
+preferred-citation:
+  type: article
+  title: "DevOps for IoT Systems: Methodologies and Software Tools"
+  authors:
+    - family-names: Ciancarini
+      given-names: Paolo
+    - family-names: Garlisi
+      given-names: Domenico
+    - family-names: Giancarlo
+      given-names: Raffaele
+    - family-names: Grimaudo
+      given-names: Gennaro
+  year: 2026
+  journal: "TODO: fill in on acceptance (currently an unpublished draft, see manuscript/)"
+# NOTE: version/date-released/doi are intentionally left out here — fill them
+# in (or let the GitHub–Zenodo integration inject the DOI) at the first tagged
+# release. See docs/known-issues-and-todos.md.

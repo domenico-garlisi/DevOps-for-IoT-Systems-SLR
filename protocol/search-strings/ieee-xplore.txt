@@ -1,0 +1,15 @@
+Database: IEEE Xplore Digital Library
+Field tag used below: "Full Text & Metadata" (or restrict to Abstract, per authors' actual run)
+
+("Full Text & Metadata":DevOps OR "Full Text & Metadata":"CI/CD" OR "Full Text & Metadata":CICD OR "Full Text & Metadata":DevSecOps)
+AND
+("Full Text & Metadata":IoT OR "Full Text & Metadata":"Internet of Things" OR "Full Text & Metadata":"Cyber-Physical Systems"
+ OR "Full Text & Metadata":CPS OR "Full Text & Metadata":"Sensors Network" OR "Full Text & Metadata":"Connected Devices"
+ OR "Full Text & Metadata":"Embedded Systems" OR "Full Text & Metadata":"Edge Systems" OR "Full Text & Metadata":"Fog Systems")
+
+Filters applied: Content Type = Conferences, Journals & Magazines; Language = English;
+Publication years = 2015–2026 (primary search).
+
+Link: https://ieeexplore.ieee.org/search/searchresult.jsp?queryText=(DevOps%20OR%20%22CI%2FCD%22%20OR%20%E2%80%9CCICD%E2%80%9D%20OR%20DevSecOps)%20AND%20(%E2%80%9CIoT%E2%80%9D%20OR%20%22Internet%20of%20Things%22%20OR%20%22cyber-physical%20systems%22%20OR%20%22sensors%20network%22%20OR%20%22connected%20devices%22%20OR%20%22embedded%20systems%22%20OR%20%22edge%20systems%22%20OR%20%22fog%20systems%22)&highlight=true&returnType=SEARCH&matchPubs=true&ranges=2016_2026_Year&returnFacets=ALL&refinements=ContentType:Conferences&refinements=ContentType:Journals
+
+Result consist of 274 entry present in ../../data/01-search-results/raw/ieee/ as csv file format

@@ -1,0 +1,35 @@
+id,tool_framework,manuscript_ref,category,modeling,development,deployment,orchestration,monitoring_visualization,testing,security_privacy
+A1,Apache OpenWhisk,[151],general-purpose,1,0,0,1,0,0,0
+A2,Ansible,[152],general-purpose,1,0,1,0,0,0,0
+A3,Chef,[153],general-purpose,1,0,1,0,0,0,0
+A4,Checkmarx,[154],general-purpose,0,0,0,0,0,0,1
+A5,Docker,[155],general-purpose,0,0,1,1,0,0,0
+A6,Docker Swarm,[156],general-purpose,0,0,1,1,0,0,0
+A7,Devstack,[157],general-purpose,0,0,0,0,1,0,0
+A8,Elastic Stack,[158],general-purpose,0,0,0,0,1,0,0
+A9,Grafana,[159],general-purpose,0,0,0,0,1,0,0
+A10,GitHub,[12],general-purpose,0,1,1,0,0,0,0
+A11,GitLab,[160],general-purpose,0,1,1,0,0,0,0
+A12,Jira,[161],general-purpose,1,1,0,0,0,0,0
+A13,Jenkins,[162],general-purpose,0,0,1,0,0,0,0
+A14,Juju,[163],general-purpose,1,0,1,1,0,0,0
+A15,Kubernetes,[164],general-purpose,0,0,1,1,0,0,0
+A16,OpenStack,[165],general-purpose,0,0,0,1,0,0,0
+A17,Prometheus,[166],general-purpose,0,0,0,0,1,0,0
+A18,Splunk,[167],general-purpose,0,0,0,0,0,0,1
+A19,SonarQube,[168],general-purpose,0,0,0,0,0,0,1
+A20,Terraform,[169],general-purpose,0,0,1,0,0,0,0
+A21,TOSCA YAML,[170],general-purpose,1,0,0,0,0,0,0
+A22,OWASP ZAP,[171],general-purpose,0,0,0,0,0,0,1
+B1,CORAS,[172],specialized,0,0,0,0,0,0,1
+B2,DocDocker,[133],specialized,0,0,0,0,0,0,1
+B3,DocSpot,[133],specialized,0,0,0,0,0,0,1
+B4,FREEDA,[71],specialized,0,0,0,0,1,0,0
+B5,Kaa,[173],specialized,0,0,0,0,1,0,0
+B6,KubeEdge,[174],specialized,0,0,0,1,0,0,0
+B7,LOG++,[45],specialized,0,0,0,0,1,0,0
+B8,ns-3,[123],specialized,0,0,0,0,0,1,0
+B9,SecurityGateway,[175],specialized,0,0,0,0,0,0,1
+B10,SirDocker,[133],specialized,0,0,0,0,0,0,1
+B11,TDD4Fog,[121],specialized,0,0,0,0,0,1,0
+B12,ThingsBoard,[176],specialized,0,0,0,0,1,0,0

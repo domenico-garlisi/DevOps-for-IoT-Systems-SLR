@@ -1,0 +1,49 @@
+{
+  "title": "Replication Package: DevOps for IoT Systems — Methodologies and Software Tools (Systematic Literature Review)",
+  "description": "Protocol, search strings, screening data, included-study lists, data-extraction sheets, and machine-readable analysis tables (maturity assessment, tool catalog, tool→DevOps-phase mapping, comparison with prior reviews) supporting the systematic literature review 'DevOps for IoT Systems: Methodologies and Software Tools' by Ciancarini, Garlisi, Giancarlo and Grimaudo. Companion resources: GitHub process-tracking repository and a Zotero group library (see README).",
+  "creators": [
+    {
+      "name": "Ciancarini, Paolo",
+      "affiliation": "University of Bologna"
+    },
+    {
+      "name": "Garlisi, Domenico",
+      "affiliation": "University of Palermo; Istituto Nazionale di Alta Matematica \"Francesco Severi\"; CNIT",
+      "orcid": "TODO: add ORCID before publishing"
+    },
+    {
+      "name": "Giancarlo, Raffaele",
+      "affiliation": "University of Palermo"
+    },
+    {
+      "name": "Grimaudo, Gennaro",
+      "affiliation": "University of Palermo"
+    }
+  ],
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "upload_type": "dataset",
+  "keywords": [
+    "DevOps",
+    "Internet of Things",
+    "Cloud-Edge Computing Continuum",
+    "CI/CD",
+    "DevSecOps",
+    "systematic literature review",
+    "PRISMA",
+    "replication package"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/domenico-garlisi/DevOps-for-IoT-SLR",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.zotero.org/groups/6502633/devops-iot-library",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "NOTE for authors: this .zenodo.json is read automatically by the GitHub–Zenodo integration the moment you publish a GitHub release, once the repo has been flipped on at zenodo.org/account/settings/github/. Fill in the ORCID field(s) above before the first release; Zenodo assigns the DOI and version numbers itself, so none are hard-coded here."
+}

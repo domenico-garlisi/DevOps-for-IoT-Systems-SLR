@@ -1,0 +1,8 @@
+area,main_tools_and_frameworks
+Modeling,"TOSCA YAML, Jira, Ansible, Chef, Juju"
+Development,"GitHub, GitLab"
+Deployment,"Jenkins, Docker, Terraform"
+Orchestration,"Kubernetes, Docker Swarm"
+Monitoring/Visualization,"Prometheus, Grafana, LOG++"
+Testing,TDD4Fog
+Security/Privacy,"SonarQube, OWASP ZAP, Checkmarx"
