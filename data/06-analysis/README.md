@@ -2,12 +2,12 @@
 
 ## Tables
 
-| File | Manuscript source | Rows represent |
+| File |  | Rows represent |
 |---|---|---|
-| `maturity-assessment-table.csv` | Table II | One thematic area, rated Exploratory/Consolidating/Mature |
-| `devops-tools-mapping-table.csv` | Table IV | One tool/framework, mapped against the DevOps phases it supports |
-| `comparison-previous-reviews-table.csv` | Table V / Appendix A | One prior review study (or the present SLR) |
-| `existing-systems.csv` | Section IX | One named existing system discussed in the comparative analysis |
+| `maturity-assessment-table.csv` |  | One thematic area, rated Exploratory/Consolidating/Mature |
+| `devops-tools-mapping-table.csv` |  | One tool/framework, mapped against the DevOps phases it supports |
+| `comparison-previous-reviews-table.csv` |  | One prior review study (or the present SLR) |
+| `existing-systems.csv` |  | One named existing system discussed in the comparative analysis |
 
 ## Narrative writeups
 

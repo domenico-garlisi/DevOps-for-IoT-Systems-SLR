@@ -67,14 +67,14 @@ Conducted 2026-07-01 to 2026-09-03, seeded from the primary-search included set,
 
 ## Execution
 
-| Stage | Folder(s)                     | What it holds                                                                                                    |
-|---|-------------------------------|------------------------------------------------------------------------------------------------------------------|
-| Execution | `data/01-primary-search/`     | Raw per-database exports of the primary search                                                                   |                                                                  |
-| Execution | `data/02-screening/`          | Duplicate and exluded studies                                                                                    |
-| Execution | `data/03-included-studies/`   | The resulting primary studies, snowballed secondary studies, and background/supporting references                |
-| Execution | `data/04-secondary-search/`   | Extraction codebook and the per-study extraction sheet                                                           |
-| Analysis | `data/05-quality-assessment/` | Per-study strength/quality scores, using the [0,1] scheme defined above                                          |
-| Analysis | `data/06-analysis/`           | Thematic synthesis and maturity assessment, the tool↔DevOps-phase mapping, and the comparison with prior reviews |
+| Stage | Folder(s)                  | What it holds                                                                                                    |
+|---|----------------------------|------------------------------------------------------------------------------------------------------------------|
+| Execution | `data/01-primary-search/`  | Raw per-database exports of the primary search                                                                   |                                                                  |
+| Execution | `data/02-screening/`       | Duplicate and exluded studies                                                                                    |
+| Execution | `data/03-secondary-search/` | Extraction codebook and the per-study extraction sheet                                                           |
+| Execution | `data/04-included-studies/` | The resulting primary studies, snowballed secondary studies, and background/supporting references                |
+| Analysis | `data/05-data-extraction/` | Per-study strength/quality scores, using the [0,1] scheme defined above                                          |
+| Analysis | `data/06-analysis/`        | Thematic synthesis and maturity assessment, the tool↔DevOps-phase mapping, and the comparison with prior reviews |
 
 Each `data/` subfolder has its own `README.md` with the exact file-by-file schema.
 
