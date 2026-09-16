@@ -14,4 +14,4 @@ Publication years = 2015–2026 (primary search).
 
 Link: https://www.webofscience.com/wos/woscc/summary/f2da0e5a-d75f-43bc-bb59-f72aa9e35ff4-01af28d797/relevance/1
 
-Result consist of 149 entry present in ../../data/01-search-results/raw/wos/ as csv file format
+Result consist of 149 entry present in ../../data/01-primary-search/raw/wos-primary-29042026.csv as csv file format

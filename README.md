@@ -6,7 +6,17 @@ This repository is the replication package for the Systematic Literature Review 
 
 It packages the review protocol, search strategy, screening decisions, included-study lists, data-extraction sheets, and the analysis tables/figures, so that another researcher can inspect or re-run the study selection and synthesis.
 
-**Companion resources already maintained by the authors:**
+## Overview
+
+This project documents a Systematic Literature Review (SLR) on the integration of DevOps practices within Internet of Things (IoT) systems. It includes the research protocol, search strategy, screening process, data extraction procedures, and analysis artifacts. 
+
+The project follows review protocol, search strategy, screening process, datasets, and analysis artifacts publicly available, enabling transparency, traceability, and reproducibility of the research process.
+
+## Scope of the review
+
+The review aims to identify the motivations, challenges, practices, tools, frameworks, and application domains that characterize the adoption of DevOps in IoT environments. Particular attention is devoted to distributed and heterogeneous systems operating across the Cloud–Edge Computing Continuum (CECC), including Cyber-Physical Systems (CPS), where software and hardware resources must be continuously deployed, configured, monitored, and evolved throughout their lifecycle.
+
+## Companion resources already maintained by the authors:
 - Research-process tracking (GitHub): https://github.com/domenico-garlisi/DevOps-for-IoT-SLR
 - Reference library (Zotero group): https://www.zotero.org/groups/6502633/devops-iot-library
 
@@ -53,7 +63,7 @@ This package is meant to sit alongside those two: Zotero holds the live, browsab
 3. Apply the inclusion/exclusion criteria in [`protocol/review-protocol.md`](protocol/review-protocol.md) at title/abstract level, then full text, recording decisions + reasons in `data/02-screening/`.
 4. Recompute the PRISMA flow counts with [`scripts/compute_prisma_counts.py`](scripts/compute_prisma_counts.py) and compare against `data/02-screening/prisma-flow-counts.csv`.
 5. Populate `data/03-included-studies/` and extract data per study using the codebook in `data/04-data-extraction/extraction-codebook.md`.
-6. Regenerate Figures with [`scripts/generate_fig.py`](scripts/generate_fig5_fig6.py) from the included-studies.
+6. Regenerate Figures with [`scripts/generate_fig.py`](scripts/generate-fig.py) from the included-studies.
 
 ## How to cite
 

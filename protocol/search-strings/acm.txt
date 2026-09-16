@@ -17,4 +17,4 @@ Publication years = 2015–2026 (primary search).
 
 Link: https://dl.acm.org/action/doSearch?fillQuickSearch=false&target=advanced&ConceptID=118222&ContentItemType=research-article&expand=dl&AfterYear=2016&BeforeYear=2026&AllField=%28DevOps+OR+%22CI%2FCD%22+OR+%22CICD%22+OR+DevSecOps%29+AND+%28%22IoT%22+OR+%22Internet+of+Things%22+OR+%22cyber-physical+systems%22+OR+%22sensors+network%22+OR+%22connected+devices%22+OR+%22embedded+systems%22+OR+%22edge+systems%22+OR+%22fog+systems%22%29
 
-Result consist of 359 entry present in ../../data/01-search-results/raw/acm/ as csv file format
+Result consist of 359 entry present in ../../data/01-primary-search/raw/acm-primary-29042026.csv as csv file format

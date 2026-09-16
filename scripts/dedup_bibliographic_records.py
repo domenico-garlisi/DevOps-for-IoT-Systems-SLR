@@ -2,18 +2,23 @@
 """
 dedup_bibliographic_records.py
 
-Skeleton deduplication script for the raw per-database exports in
-data/01-search-results/raw/<database>/.
+Skeleton deduplication script for the per-database exports in
+data/01-primary-search/uniformed/ -- the semicolon-delimited, common-schema
+files (source;entry_type;document_type;title;authors;year;doi;url;abstract;
+keywords;journal;booktitle;publisher;pages), one per database (wos, ieee,
+acm, scopus). Use these rather than data/01-primary-search/raw/, whose
+files keep each database's own native column names/delimiter and are not
+directly comparable across databases.
 
 Strategy (adjust to taste, but document whatever you actually use in
-data/02-screening/README-backup.md and this file's docstring):
+data/02-screening/README.md and this file's docstring):
   1. Normalize titles (lowercase, strip punctuation/whitespace) and DOIs.
   2. Exact-match on normalized DOI -> definite duplicate.
   3. Exact-match on normalized title + year -> probable duplicate, flag for
      manual confirmation (conference papers that later appear as extended
      journal articles will NOT be caught by this and need a manual pass,
      per the manuscript's own inclusion/exclusion note on this exact case).
-  4. Write survivors + a dedup log to data/02-screening/.
+  4. Write survivors + a dedup log to data/02-screening/duplicate.csv.
 
 This is a starting skeleton, not a finished, validated pipeline -- the
 manuscript reports 322 primary-search and 342 secondary-search duplicates
@@ -41,11 +46,11 @@ def normalize_doi(doi: str) -> str:
     return doi
 
 
-def load_records(raw_dir: Path):
+def load_records(input_dir: Path):
     records = []
-    for csv_path in sorted(raw_dir.rglob("*.csv")):
-        with csv_path.open(newline="", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
+    for csv_path in sorted(input_dir.glob("*.csv")):
+        with csv_path.open(newline="", encoding="utf-8-sig") as f:
+            reader = csv.DictReader(f, delimiter=";")
             for row in reader:
                 row["_source_file"] = str(csv_path)
                 records.append(row)
@@ -67,28 +72,31 @@ def find_duplicate_groups(records, title_field="title", doi_field="doi"):
 
 
 def main():
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--raw-dir", default="../data/01-search-results/raw",
-                     help="Directory tree containing per-database CSV exports")
+    ap = argparse.ArgumentParser(description=__doc__,
+                                  formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--input-dir", default="../data/01-primary-search/uniformed",
+                     help="Directory containing the uniformed, semicolon-delimited "
+                          "per-database CSV exports")
     ap.add_argument("--title-field", default="title")
     ap.add_argument("--doi-field", default="doi")
     args = ap.parse_args()
 
-    raw_dir = Path(args.raw_dir)
-    if not raw_dir.exists():
-        print(f"No raw exports found at {raw_dir} -- populate "
-              f"data/01-search-results/raw/<database>/ first.", file=sys.stderr)
+    input_dir = Path(args.input_dir)
+    if not input_dir.exists():
+        print(f"No uniformed exports found at {input_dir} -- populate "
+              f"data/01-primary-search/uniformed/ first.", file=sys.stderr)
         sys.exit(1)
 
-    records = load_records(raw_dir)
+    records = load_records(input_dir)
     if not records:
-        print("Raw directory exists but contains no CSV records yet.", file=sys.stderr)
+        print("Input directory exists but contains no CSV records yet.", file=sys.stderr)
         sys.exit(1)
 
     groups = find_duplicate_groups(records, args.title_field, args.doi_field)
-    print(f"Loaded {len(records)} records from {raw_dir}")
+    print(f"Loaded {len(records)} records from {input_dir}")
     print(f"Found {len(groups)} candidate duplicate group(s) "
-          f"(manual confirmation still required before writing the dedup log).")
+          f"(manual confirmation still required before writing to "
+          f"data/02-screening/duplicate.csv).")
 
 
 if __name__ == "__main__":
