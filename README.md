@@ -43,11 +43,11 @@ This package is meant to sit alongside those two: Zotero holds the live, browsab
 .
 ├── protocol/                  Review protocol + per-database search strings
 ├── data/
-│   ├── 01-search-results/     Raw exports per database (primary + secondary search) — drop CSV/RIS/BibTeX exports under raw/<db>/
-│   ├── 02-screening/          PRISMA flow counts, deduplication log, title/abstract and full-text screening decisions
-│   ├── 03-included-studies/   Final primary studies, snowballed secondary studies, and background/supporting references
-│   ├── 04-data-extraction/    Extraction codebook + per-study extraction sheet
-│   └── 05-quality-assessment/ 
+│   ├── 01-primary-search/     Raw exports per database — drop CSV exports under raw/
+│   ├── 02-screening/          Duplication, exclusion, primary-study, and background/supporting references and screening decisions
+│   ├── 03-secondary-search/   Snowballed secondary studies
+│   ├── 04-included-studies/   Final primary studies, snowballed secondary studies, and background/supporting references
+│   ├── 05-data-extraction/    Extraction codebook + per-study extraction sheet
 │   └── 06-analysis/           
 ├── figures/                   Mapping of each paper figure to its underlying data/regeneration script
 ├── scripts/                   Deduplication, PRISMA-count, and figure-regeneration scripts (Python)
